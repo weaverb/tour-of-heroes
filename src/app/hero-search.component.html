@@ -1,12 +1,9 @@
 <div id="search-component">
-  <h4>Hero Search</h4>
   <md-input-container>
-    <input mdInput #searchBox id="search-box"
-      (keyup)="search(searchBox.value)" placeholder="search" />
+    <input mdInput #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="search" />
   </md-input-container>
   <div>
-    <div *ngFor="let hero of heroes | async"
-      (click)="gotoDetail(hero)" class="search-result">
+    <div *ngFor="let hero of heroes | async" (click)="gotoDetail(hero)" class="search-result">
       {{hero.name}}
     </div>
   </div>

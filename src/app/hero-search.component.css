@@ -5,10 +5,21 @@
   width:195px;
   height: 20px;
   padding: 5px;
-  background-color: white;
+  background-color: #F4F4F4;
   cursor: pointer;
+  z-index: 1000;
+  position: relative;
 }
+
+.search-result:first-child {
+   border-top: 1px solid gray;
+}
+
+
+
 #search-box{
   width: 200px;
   height: 20px;
 }
+
+

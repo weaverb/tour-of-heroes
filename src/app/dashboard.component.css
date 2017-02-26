@@ -14,8 +14,12 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 h3 {
   text-align: center; margin-bottom: 0;
+  font-size: 350%;
+  font-weight: bold;
+  margin-top: 0;
 }
 h4 {
   position: relative;
@@ -49,13 +53,41 @@ h4 {
 @media (max-width: 600px) {
   .module {
     font-size: 10px;
-    max-height: 75px; }
+    max-height: 75px;
+  }
+  .card-title {
+    font-size: 80% !important;
+  }
 }
-@media (max-width: 1024px) {
+@media (min-width: 601px) {
   .grid {
     margin: 0;
   }
   .module {
     min-width: 60px;
   }
+  .card-title {
+    font-size: 125% !important;
+  }
 }
+
+@media (min-width: 1025px) {
+  .card-title {
+    font-size: 250%  !important;
+  }
+}
+
+.card-title {
+  color: #373737;
+}
+.card-img {
+  background-color: #C0B283;
+}
+
+md-card {
+  background-color: #F4F4F4;
+}
+
+
+
+
